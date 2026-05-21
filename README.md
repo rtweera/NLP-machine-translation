@@ -10,10 +10,10 @@ It includes:
 
 ## Repository structure
 
-- `/home/runner/work/NLP-machine-translation/NLP-machine-translation/app/` — main SMT implementations
-- `/home/runner/work/NLP-machine-translation/NLP-machine-translation/data/` — parallel corpus, LM corpus, and test text
-- `/home/runner/work/NLP-machine-translation/NLP-machine-translation/utils/` — dataset generation utilities
-- `/home/runner/work/NLP-machine-translation/NLP-machine-translation/final-3-stage-machine-translation.ipynb` — end-to-end pipeline notebook
+- `app/` — main SMT implementations
+- `data/` — parallel corpus, LM corpus, and test text
+- `utils/` — dataset generation utilities
+- `final-3-stage-machine-translation.ipynb` — end-to-end pipeline notebook
 
 ## Requirements
 
@@ -21,7 +21,7 @@ It includes:
 - Poetry (recommended)
 
 Dependencies are defined in:
-- `/home/runner/work/NLP-machine-translation/NLP-machine-translation/pyproject.toml`
+- `pyproject.toml`
 
 ## Setup
 
@@ -49,7 +49,7 @@ poetry run python app/smt_improved.py
 
 Use the notebook below for the full end-to-end system:
 
-- `/home/runner/work/NLP-machine-translation/NLP-machine-translation/final-3-stage-machine-translation.ipynb`
+- `final-3-stage-machine-translation.ipynb`
 
 The notebook is organized into three stages:
 
@@ -57,7 +57,7 @@ The notebook is organized into three stages:
    - Builds and tests a statistical spelling corrector
    - Exposes helper functions and an object usable in a larger pipeline
 2. **Stage 2: Complex English to simpler English conversion**
-   - Includes environment setup, utility functions, optional finetuning, and inference
+   - Includes environment setup, utility functions, optional fine-tuning, and inference
    - Provides a `convert_lang_eng(...)` function for pipeline use
 3. **Stage 3: Final neural translation**
    - Uses a quantized MBART translation pipeline
